@@ -12,6 +12,16 @@
 
 // rotinas
 #include "rotinas/ajuda/ajuda.h"
+#include "rotinas/cholesky/cholesky.h"
+#include "rotinas/decomposicao_lu/decomposicao_lu.h"
+#include "rotinas/determinante/determinante.h"
+#include "rotinas/gauss_compacto/gauss_compacto.h"
+#include "rotinas/gauss_jordan/gauss_jordan.h"
+#include "rotinas/gauss_siedel/gauss_siedel.h"
+#include "rotinas/jacobi/jacobi.h"
+#include "rotinas/matriz_inversa/matriz_inversa.h"
+#include "rotinas/sistema_triangular_inferior/sistema_triangular_inferior.h"
+#include "rotinas/sistema_triangular_superior/sistema_triangular_superior.h"
 
 int main(int argc, char *argv[])
 {
@@ -36,52 +46,52 @@ int main(int argc, char *argv[])
     }
     if (strcmp(comando, "rd") == 0)
     {
-        // Determinante();
+        Determinante();
         return 0;
     }
     if (strcmp(comando, "rsti") == 0)
     {
-        // SistemaTriangularInferior();
+        SistemaTriangularInferior();
         return 0;
     }
     if (strcmp(comando, "rsts") == 0)
     {
-        // SistemaTriangularSuperior();
+        SistemaTriangularSuperior();
         return 0;
     }
     if (strcmp(comando, "rdlu") == 0)
     {
-        // DecomposicaoLU();
+        DecomposicaoLU();
         return 0;
     }
     if (strcmp(comando, "rc") == 0)
     {
-        // Cholesky();
+        Cholesky();
         return 0;
     }
     if (strcmp(comando, "rgc") == 0)
     {
-        // GaussCompacto();
+        GaussCompacto();
         return 0;
     }
     if (strcmp(comando, "rgj") == 0)
     {
-        // GaussJordan();
+        GaussJordan();
         return 0;
     }
     if (strcmp(comando, "rj") == 0)
     {
-        // Jacobi();
+        Jacobi();
         return 0;
     }
     if (strcmp(comando, "rgs") == 0)
     {
-        // GaussSiedel();
+        GaussSiedel();
         return 0;
     }
     if (strcmp(comando, "rmi") == 0)
     {
-        // MatrizInversa();
+        MatrizInversa();
         return 0;
     }
 
