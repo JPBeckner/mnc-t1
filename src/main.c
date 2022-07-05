@@ -27,7 +27,6 @@ int main(int argc, char *argv[])
 {
     char comando[100];
     sprintf(comando, "%s", argv[1]);
-    // printf("%s", argv[1]);
 
     if (strcmp(comando, "") == 0)
     {
@@ -46,7 +45,7 @@ int main(int argc, char *argv[])
     }
     if (strcmp(comando, "rd") == 0)
     {
-        Determinante();
+        Determinante(atoi(argv[2]));
         return 0;
     }
     if (strcmp(comando, "rsti") == 0)
