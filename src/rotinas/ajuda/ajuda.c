@@ -11,6 +11,8 @@ void ajuda()
             "\nComo usar:"
             "\n\tmnc <rotina> [argumentos, ...]\n"
             "\nRotinas:"
+            "\n\t*  ajuda: apresenta os comandos disponíveis.\n"
+            "\t-"
             "\n\t*  rd   - Rotina Determinante"
             "\n\t*  rsti - Rotina Sistema Triangular Inferior"
             "\n\t*  rsts - Rotina Sistema Triangular Superior"
