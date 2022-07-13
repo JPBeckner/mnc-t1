@@ -27,15 +27,9 @@ int main(int argc, char *argv[])
 {
     char comando[100];
     sprintf(comando, "%s", argv[1]);
+    // printf("DEBUG: argv 1 : %s\n", argv[1]);
 
-    if (strcmp(comando, "") == 0)
-    {
-        ajuda();
-        // printf("%s", comando);
-        // printf("teste'");
-        return 0;
-    }
-    if (strcmp(comando, "ajuda") == 0)
+    if (strcmp(comando, "ajuda") == 0 || strcmp(comando, "(null)") == 0)
     {
         printf("Apresentando comandos:\n");
         ajuda();
