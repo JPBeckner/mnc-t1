@@ -1,20 +1,28 @@
 #include "ajuda.h"   
-/* Always include the header file that declares something
-* in the C file that defines it. This makes sure that the
-* declaration and definition are always in-sync.  Put this
-* header first in foo.c to ensure the header is self-contained.
-*/
 #include <stdio.h>
 
-/**
- * This is the function definition.
- * It is the actual body of the function which was declared elsewhere.
- */
 void ajuda()
 {
-    // fprintf(stderr, "foo(%d, \"%s\");\n", id, name);
-    /* This will print how foo was called to stderr - standard error.
-     * e.g., foo(42, "Hi!") will print `foo(42, "Hi!")`
-     */
-    printf("funcao de ajuda");
+    // printf("funcao de ajuda");
+    printf("\nCLI MNC T1 - "
+            "ferramenta de linha de comando que executa "
+            "as rotinas implementadas de acordo com o solicitado"
+            "pelo trabalho.\n"
+            "\nComo usar:"
+            "\n\tmnc <rotina> [argumentos, ...]\n"
+            "\nRotinas:"
+            "\n\t*  ajuda: apresenta os comandos disponíveis.\n"
+            "\t-"
+            "\n\t*  rd   - Rotina Determinante"
+            "\n\t*  rsti - Rotina Sistema Triangular Inferior"
+            "\n\t*  rsts - Rotina Sistema Triangular Superior"
+            "\n\t*  rdlu - Rotina Decomposicao LU"
+            "\n\t*  rc   - Rotina Cholesky"
+            "\n\t*  rgc  - Rotina Gauss Compacto"
+            "\n\t*  rgj  - Rotina Gauss Jordan"
+            "\n\t*  rj   - Rotina Jacobi"
+            "\n\t*  rgs  - Rotina Gauss Siedel"
+            "\n\t*  rmi  - Rotina Matriz Inversa"
+            "\n\nExemplo:"
+            "\n\tmnc rd 1 1\n");
 }
