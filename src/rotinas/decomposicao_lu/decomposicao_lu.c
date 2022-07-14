@@ -46,14 +46,10 @@ void calcularDecomporLU(int ordem, float matriz[SIZE][SIZE], float vetorTermos[S
     float vetor[SIZE];
     float matrizL[SIZE][SIZE], matrizU[SIZE][SIZE];
 
-    // define L e U
     decomporLU(ordem, matriz, matrizL, matrizU);
 
-    // resolve a equacao
     calcularSistemaTriangularInferior(ordem, matriz, vetorTermos, vetor);
-    // triangularInferior(l, size, termos, y);
     calcularSistemaTriangularSuperior(ordem, matrizU, vetor, vetorS);
-    // triangularSuperior(u, size, y, s);
 }
 
 void DecomposicaoLU()

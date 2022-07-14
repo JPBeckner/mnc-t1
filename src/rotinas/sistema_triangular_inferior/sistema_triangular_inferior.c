@@ -48,11 +48,9 @@ void SistemaTriangularInferior()
     
     printf("Informe os valores da matriz:\n");
     ler_matriz(ordem, ordem, matriz);
-    printf("\n");
 
     if(isTriangularInferior(ordem, matriz) != 1){
         printf("Matriz: nao triangular inferior\n");
-
         return;
     }
 
