@@ -1,11 +1,3 @@
-/*
- * Métodos Numéricos Computacionais
- * Trabalho 1: Resolução de Sistemas Lineares e Cálculo de Matriz Inversa
- *
- * Christian Rodrigues Batista - 191020941
- * João Pedro Beckner - 191025607
- */
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -23,18 +15,24 @@
 #include "rotinas/sistema_triangular_inferior/sistema_triangular_inferior.h"
 #include "rotinas/sistema_triangular_superior/sistema_triangular_superior.h"
 
+
+/*
+ * Métodos Numéricos Computacionais
+ * Trabalho 1: Resolução de Sistemas Lineares e Cálculo de Matriz Inversa
+ *
+ * Christian Rodrigues Batista - 191020941
+ * João Pedro Beckner - 191025607
+ */
+
 int main(int argc, char *argv[])
 {
     char comando[100];
     sprintf(comando, "%s", argv[1]);
-    // printf("DEBUG: argv 1 : %s\n", argv[1]);
 
     if (strcmp(comando, "ajuda") == 0 || strcmp(comando, "(null)") == 0)
     {
         printf("Apresentando comandos:\n");
         ajuda();
-        // printf("%s\n", comando);
-        // printf("teste\n'");
         return 0;
     }
     if (strcmp(comando, "rd") == 0)

@@ -15,6 +15,8 @@ compilar-linux:
 	
 	gcc -c src/estruturas/matriz/matriz.c -o bin/linux/matriz.o
 	gcc -c src/estruturas/vetor/vetor.c -o bin/linux/vetor.o
+	
+	gcc -c src/geral/geral.c -o bin/linux/geral.o
 
 	gcc bin/linux/mnc.o \
 	bin/linux/ajuda.o \
@@ -29,6 +31,8 @@ compilar-linux:
 	bin/linux/sistema_triangular_inferior.o \
 	bin/linux/sistema_triangular_superior.o \
 	bin/linux/matriz.o \
+	bin/linux/vetor.o \
+	bin/linux/geral.o \
 	-o bin/linux/mnc -lm
 
 compilar-windows:

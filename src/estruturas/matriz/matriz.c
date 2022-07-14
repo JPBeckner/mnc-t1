@@ -1,34 +1,35 @@
+#include "matriz.h"
 #include <stdio.h>
 
 
-#define SIZE 100
+// #define SIZE 100
 
-void print_matriz(int ordem_matriz, int matriz[SIZE][SIZE])
+void print_matriz(int linha, int coluna, float matriz[SIZE][SIZE])
 {
-    printf("\n\t-- Mostrando a matriz M%ix%i --\n\n", ordem_matriz, ordem_matriz);
-    for( int i = 0; i < ordem_matriz; i++)
+    printf("\n\t-- Mostrando a matriz M%ix%i --\n\n", linha, coluna);
+    for( int i = 0; i < linha; i++)
     {
         printf("|");
-        for( int j = 0; j < ordem_matriz; j++)
+        for( int j = 0; j < coluna; j++)
         {
-            printf(" %i ",  matriz[i][j]);
+            printf(" %.2f ",  matriz[i][j]);
         }
         printf("|\n");
     }
 }
 
-void ler_matriz(int ordem_matriz, int matriz[SIZE][SIZE])
+void ler_matriz(int linha, int coluna, float matriz[SIZE][SIZE])
 {
     int i = 0, j = 0;
     // int matriz[SIZE][SIZE];
-    printf("ordem: %i\n", ordem_matriz);
+    // printf("ordem: %ix%i\n", linha, coluna);
     int valor;
     // fflush(stdin);
-    printf("\nLendo a matriz M%ix%i.", ordem_matriz, ordem_matriz);
+    // printf("\nLendo a matriz M%ix%i.", linha, coluna);
 
-    for( int i = 0; i < ordem_matriz; i++)
+    for( int i = 0; i < linha; i++)
     {
-        for( int j = 0; j < ordem_matriz; j++)
+        for( int j = 0; j < coluna; j++)
         {
             printf("\nInforme o valor para M%ix%i\n", i+1, j+1);
             fflush(stdin);

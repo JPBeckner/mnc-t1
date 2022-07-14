@@ -3,10 +3,8 @@
 
 #define SIZE 100
 
-void print_matriz(int ordem_matriz, int matriz[SIZE][SIZE]);
+void print_matriz(int linha, int coluna, float matriz[SIZE][SIZE]);
 
-void ler_matriz(int ordem_matriz, int matriz[SIZE][SIZE]);
-
-// void ler_matriz(int ordem_matriz );
+void ler_matriz(int linha, int coluna, float matriz[SIZE][SIZE]);
 
 #endif
