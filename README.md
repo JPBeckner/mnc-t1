@@ -6,6 +6,7 @@ Métodos Numéricos Computacionais - Trabalho 1: Resolução de Sistemas Lineare
 
 | Nome - RA
 
+* Antonio Pedro Forte - 191024287
 * Christian Rodrigues Batista - 191020941
 * João Pedro Beckner - 191025607
 
