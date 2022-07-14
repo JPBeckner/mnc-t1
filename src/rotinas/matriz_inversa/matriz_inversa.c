@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "matriz_inversa.h"   
+#include "../../estruturas/matriz/matriz.h"
 #include "../decomposicao_lu/decomposicao_lu.h"
 
 
@@ -28,6 +29,6 @@ void MatrizInversa()
     printf("Informe os valores da matriz: \n");
     ler_matriz(ordem, ordem, matriz);
 
-    calcularInversa(ordem, matriz, vetorTermos, vetorS);
+    calcularInversa(ordem, matriz, inversa);
 
 }
